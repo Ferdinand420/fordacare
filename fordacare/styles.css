@@ -5,11 +5,33 @@ body {
     }
 
     header {
-      background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
       color: white;
-      padding: 20px;
+      padding: 40px 0; /* Add vertical padding for content */
       text-align: center;
       background-size: cover;
+      position: relative;
+      overflow: hidden;
+      height: 300px; /* Increased height for less cropping */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    header img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      z-index: 0;
+      opacity: 1; /* Adjust for desired visibility */
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 1;
     }
 
     header h1 {
