@@ -123,19 +123,23 @@ body {
     .footer {
       background: #14325c;
       color: #fff;
-      border-radius: 18px;
+      border-radius: 0; /* Remove rounded corners */
       box-shadow: 0 4px 16px rgba(0,0,0,0.08);
       text-align: center;
-      padding: 28px 0;      /* Reduced padding for a smaller footer */
-      font-size: 1.2em;     /* Slightly smaller text */
-      margin: 40px auto 20px auto;
+      padding: 28px 0;
+      font-size: 1.2em;
+      margin: 40px 0 0 0;      /* Remove auto and set margin to 0 for full width */
       letter-spacing: 1px;
       font-weight: 600;
-      min-height: 60px;     /* Reduced min-height */
-      max-width: 900px;
+      min-height: 60px;
+      max-width: none;         /* Remove max-width restriction */
+      width: 100vw;            /* Ensure it spans the viewport width */
       display: flex;
       align-items: center;
       justify-content: center;
+      left: 0;
+      right: 0;
+      position: relative;
     }
 
     .top-flexbox {
