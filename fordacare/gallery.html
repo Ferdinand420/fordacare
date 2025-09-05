@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ...existing gallery styles... */
+        h1 {
+            text-align: center;
+            margin-top: 32px;
+            color: #333;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        .caption {
+            padding: 12px;
+            text-align: center;
+            color: #555;
+            font-size: 1rem;
+        }
+        @media (max-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); /* 2 per row on medium screens */
+            }
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr; /* 1 per row on small screens */
+                padding: 10px;
+                gap: 10px;
+            }
+            .gallery-item img {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/forda.png" alt="FordaCare Logo">
+    </header>
+    <div class="container">
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="announcements.html">ANNOUNCEMENTS</a>
+            <a href="news.html">NEWS</a>
+            <a href="gallery.html">GALLERY</a>    
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <div class="content">
+            <h1>Gallery</h1>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/arts.png" alt="Arts and Crafts">
+                    <div class="caption">
+                        Arts and Crafts<br>
+                        <span>Children expressing creativity with colors and materials.</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/classroom.png" alt="Classroom Learning">
+                    <div class="caption">
+                        Classroom Learning<br>
+                        <span>Engaged in fun, interactive lessons with caring teachers.</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/music.png" alt="Music and Movement">
+                    <div class="caption">
+                        Music and Movement<br>
+                        <span>Kids enjoying music, dance, and rhythm activities together.</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/play.png" alt="Outdoor Play">
+                    <div class="caption">
+                        Outdoor Play<br>
+                        <span>Exploring, running, and playing games in a safe outdoor space.</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/story.png" alt="Story Time">
+                    <div class="caption">
+                        Story Time<br>
+                        <span>Listening to stories that spark imagination and curiosity.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Forda Care. All rights reserved.
+    </div>
+</body>
+</html>

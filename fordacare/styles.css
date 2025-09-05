@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: #e3f2fd;
+}
+
+header {
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  background-size: cover;
+  overflow: hidden;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  opacity: 1;
+}
+
+header h1,
+header p {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  width: 200px;
+  padding: 20px;
+}
+
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+nav a:nth-child(1) { background: #e74c3c; }
+nav a:nth-child(2) { background: #f39c12; }
+nav a:nth-child(3) { background: #f1c40f; }
+nav a:nth-child(4) { background: #27ae60; }
+nav a:nth-child(5) { background: #2980b9; }
+nav a:nth-child(6) { background: #8e44ad; }
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.welcome-banner {
+  background: #dcedc8;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.welcome-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.box h2 {
+  background: #2196f3;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 0;
+}
+
+.box p {
+  text-align: justify;
+}
+
+.footer {
+  background: #14325c;
+  color: #fff;
+  text-align: center;
+  padding: 28px 0;
+  font-size: 1.2em;
+  margin: 40px 0 0 0;
+  letter-spacing: 1px;
+  font-weight: 600;
+  min-height: 60px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.top-flexbox {
+  background: #ef5350;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.search-label {
+  margin: 0;
+  margin-right: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+.top-flexbox form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.top-flexbox input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+}
+
+.top-flexbox button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: #fff;
+  color: #ef5350;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.caption {
+  padding: 12px;
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+}
+
+.updates-list {
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+  font-size: 1.08em;
+}
+
+.main-content.horizontal-news {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.main-content.horizontal-news .box {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .main-content.horizontal-news .box {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    padding: 10px;
+    gap: 10px;
+  }
+  .gallery-item img {
+    height: 120px;
+  }
+}
