@@ -14,7 +14,7 @@
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(3, 1fr); /* 3 images per row */
             gap: 20px;
             padding: 40px;
             max-width: 1200px;
@@ -42,8 +42,14 @@
             color: #555;
             font-size: 1rem;
         }
+        @media (max-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); /* 2 per row on medium screens */
+            }
+        }
         @media (max-width: 600px) {
             .gallery {
+                grid-template-columns: 1fr; /* 1 per row on small screens */
                 padding: 10px;
                 gap: 10px;
             }
@@ -71,24 +77,39 @@
             <h1>Gallery</h1>
             <div class="gallery">
                 <div class="gallery-item">
-                    <img src="images/Arts and crafts.png" alt="Image 1">
-                    <div class="caption">Image 1</div>
+                    <img src="images/Arts and crafts.png" alt="Arts and Crafts">
+                    <div class="caption">
+                        Arts and Crafts<br>
+                        <span>Children expressing creativity with colors and materials.</span>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/classroom learning.png" alt="Image 2">
-                    <div class="caption">Image 2</div>
+                    <img src="images/classroom learning.png" alt="Classroom Learning">
+                    <div class="caption">
+                        Classroom Learning<br>
+                        <span>Engaged in fun, interactive lessons with caring teachers.</span>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/music and movement.png" alt="Image 3">
-                    <div class="caption">Image 3</div>
+                    <img src="images/music and movement.png" alt="Music and Movement">
+                    <div class="caption">
+                        Music and Movement<br>
+                        <span>Kids enjoying music, dance, and rhythm activities together.</span>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/outdoor play.png" alt="Image 4">
-                    <div class="caption">Image 4</div>
+                    <img src="images/outdoor play.png" alt="Outdoor Play">
+                    <div class="caption">
+                        Outdoor Play<br>
+                        <span>Exploring, running, and playing games in a safe outdoor space.</span>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/Story time.png" alt="Image 5">
-                    <div class="caption">Image 5</div>
+                    <img src="images/Story time.png" alt="Story Time">
+                    <div class="caption">
+                        Story Time<br>
+                        <span>Listening to stories that spark imagination and curiosity.</span>
+                    </div>
                 </div>
             </div>
         </div>
