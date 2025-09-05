@@ -121,11 +121,11 @@ body {
     }
 
     .footer {
+      background: #f2f2f2;
       text-align: center;
-      padding: 20px;
-      color: #666;
-      font-size: 0.9em;
-
+      padding: 40px 0; /* Increased padding for a bigger footer */
+      font-size: 1.3em; /* Larger text */
+      margin-top: 40px;
     }
 
     .top-flexbox {
