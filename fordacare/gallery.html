@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f8f9fa;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 32px;
+            color: #333;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        .caption {
+            padding: 12px;
+            text-align: center;
+            color: #555;
+            font-size: 1rem;
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                padding: 10px;
+                gap: 10px;
+            }
+            .gallery-item img {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/Arts and crafts.png" alt="Image 1">
+            <div class="caption">Image 1</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/classroom learning.png" alt="Image 2">
+            <div class="caption">Image 2</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/music and movement.png" alt="Image 3">
+            <div class="caption">Image 3</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/outdoor play.png" alt="Image 4">
+            <div class="caption">Image 4</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/Story time.png" alt="Image 5">
+            <div class="caption">Image 5</div>
+        </div>
+    </div>
+</body>
+</html>
