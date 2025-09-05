@@ -220,6 +220,14 @@ body {
       font-size: 1rem;
     }
 
+    .updates-list {
+      background: none;
+      border-radius: 0;
+      padding: 0;
+      margin-bottom: 2rem;
+      font-size: 1.08em;
+    }
+
     @media (max-width: 600px) {
       .gallery {
         padding: 10px;

@@ -6,33 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
-        header { background: #005fa3; color: #fff; padding: 1.5rem 2rem; }
-        header h1 { margin: 0; font-size: 2rem; }
-        main { max-width: 800px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);}
-        article { margin-bottom: 2rem; }
-        article:last-child { margin-bottom: 0; }
-        h2 { color: #005fa3; margin-top: 0; }
-        .date { color: #888; font-size: 0.95rem; margin-bottom: 0.5rem; }
-        .updates-list {
-            background: #e3f2fd;
-            border-radius: 8px;
-            padding: 1.2rem 1.5rem;
-            margin-bottom: 2rem;
-            font-size: 1.08em;
+        .main-content.horizontal-news {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            align-items: stretch;
         }
-        .updates-list li {
-            margin-bottom: 0.7em;
+        .main-content.horizontal-news .box {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
         }
-        @media (max-width: 600px) {
-            main { padding: 1rem; }
-            header { padding: 1rem; }
+        @media (max-width: 800px) {
+            .main-content.horizontal-news .box {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <header style="background: none; padding: 0; text-align: center;">
-        <img src="images/FORDA.png" alt="FordaCare Logo" style="width:180px; height:auto; margin-top: 24px;">
+    <header>
+        <img src="images/FORDA.png" alt="FordaCare Logo">
     </header>
     <div class="container">
         <nav>
@@ -45,39 +39,38 @@
             <a href="contact.html">CONTACT</a>
         </nav>
         <div class="content">
-            <main>
-                <h1 style="text-align:center; color:#14325c; margin-top: 0; margin-bottom: 2rem; font-size:2.2rem;">FordaCare News</h1>
-                <section class="updates-list">
-                    <strong>📰 FORDA CARE Updates:</strong>
+            <div class="main-content horizontal-news">
+                <div class="box">
+                    <h2>FordaCare News</h2>
                     <ul>
-                        <li>🛝 New play equipment has been installed in our playground for safe and exciting adventures.</li>
-                        <li>🎓 Our teachers are attending a child development seminar this month to enhance classroom activities.</li>
-                        <li>💖 A community outreach program is planned for the upcoming semester to teach children the value of kindness and sharing.</li>
-                        <li>🌱 We are launching a “Green Day” project where kids will learn about plants, recycling, and caring for the environment.</li>
+                        <li><strong>🛝</strong> New play equipment has been installed in our playground for safe and exciting adventures.</li>
+                        <li><strong>🎓</strong> Our teachers are attending a child development seminar this month to enhance classroom activities.</li>
+                        <li><strong>💖</strong> A community outreach program is planned for the upcoming semester to teach children the value of kindness and sharing.</li>
+                        <li><strong>🌱</strong> We are launching a “Green Day” project where kids will learn about plants, recycling, and caring for the environment.</li>
                     </ul>
-                </section>
-                <article>
-                    <h2>New Health Portal Launched</h2>
+                </div>
+                <div class="box">
+                    <h3>New Health Portal Launched</h3>
                     <div class="date">June 10, 2024</div>
                     <p>
                         FordaCare is excited to announce the launch of our new health portal, making it easier for patients to access their records and book appointments online.
                     </p>
-                </article>
-                <article>
-                    <h2>Community Wellness Event</h2>
+                </div>
+                <div class="box">
+                    <h3>Community Wellness Event</h3>
                     <div class="date">May 28, 2024</div>
                     <p>
                         Join us for our annual Community Wellness Event! Free health screenings, wellness workshops, and fun activities for the whole family.
                     </p>
-                </article>
-                <article>
-                    <h2>COVID-19 Vaccination Updates</h2>
+                </div>
+                <div class="box">
+                    <h3>COVID-19 Vaccination Updates</h3>
                     <div class="date">May 15, 2024</div>
                     <p>
                         Stay informed about the latest COVID-19 vaccination schedules and guidelines. Visit our portal for more information and to book your appointment.
                     </p>
-                </article>
-            </main>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
