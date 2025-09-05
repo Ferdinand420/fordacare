@@ -121,11 +121,21 @@ body {
     }
 
     .footer {
-      background: #f2f2f2;
+      background: #14325c;           /* Dark blue */
+      color: #fff;                   /* White text */
+      border-radius: 18px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
       text-align: center;
-      padding: 40px 0; /* Increased padding for a bigger footer */
-      font-size: 1.3em; /* Larger text */
-      margin-top: 40px;
+      padding: 60px 0;
+      font-size: 1.5em;
+      margin: 60px auto 20px auto;
+      letter-spacing: 1px;
+      font-weight: 600;
+      min-height: 100px;
+      max-width: 900px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .top-flexbox {
