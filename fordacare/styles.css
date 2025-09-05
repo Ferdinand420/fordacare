@@ -121,17 +121,17 @@ body {
     }
 
     .footer {
-      background: #14325c;           /* Dark blue */
-      color: #fff;                   /* White text */
+      background: #14325c;
+      color: #fff;
       border-radius: 18px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.08);
       text-align: center;
-      padding: 60px 0;
-      font-size: 1.5em;
-      margin: 60px auto 20px auto;
+      padding: 28px 0;      /* Reduced padding for a smaller footer */
+      font-size: 1.2em;     /* Slightly smaller text */
+      margin: 40px auto 20px auto;
       letter-spacing: 1px;
       font-weight: 600;
-      min-height: 100px;
+      min-height: 60px;     /* Reduced min-height */
       max-width: 900px;
       display: flex;
       align-items: center;
